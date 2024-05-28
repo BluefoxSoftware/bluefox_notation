@@ -1,0 +1,14 @@
+[package]
+name = "bluefox_notation"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "bluefox_notation"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib", "staticlib"]
+
+[dependencies]
+libc = "0.2.154"
+mlua = { version = "0.9.7", features = ["lua54"] }
+regex = "1.10.4"
