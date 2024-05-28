@@ -1,0 +1,16 @@
+{
+    "name": "Fedora 40 Dev Container",
+    "build": {
+      "dockerfile": "../Dockerfile"
+    },
+    "runArgs": [
+      "--cap-add=SYS_PTRACE",
+      "--security-opt", "seccomp=unconfined"
+    ],
+    "settings": { 
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      // List any VS Code extensions you want installed
+    ]
+  }
